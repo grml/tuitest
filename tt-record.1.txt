@@ -24,18 +24,18 @@ replay the recorded session.
 Options and environment variables
 ---------------------------------
 
-*-f*
-  Enable fast mode. Do not respect exact timings but execute it as fast as
-  possible.
+*-f*::
+    Enable fast mode. Do not respect exact timings but execute it as fast as
+    possible.
 
-*-x*
-  Provide a junit compatible XML file (RESULT-$script.xml) when running the recorded session.
-  The XML file can then be used in tools like for example hudson.
+*-x*::
+    Provide a junit compatible XML file (RESULT-$script.xml) when running the recorded session.
+    The XML file can then be used in tools like for example hudson.
 
 Usage examples
 ---------------
 
-  tt-record output.rb vim
+  % tt-record output.rb vim
 
 Run the console editor Vim and save the unit testing script as output.rb.
 Then execute 'ruby ./output.rb' to replay the recorded session.
