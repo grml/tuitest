@@ -29,7 +29,8 @@ Options and environment variables
   possible.
 
 *-x*
-  Provide a XML file (RESULT-$script.xml) when running the recorded session.
+  Provide a junit compatible XML file (RESULT-$script.xml) when running the recorded session.
+  The XML file can then be used in tools like for example hudson.
 
 Usage examples
 ---------------
@@ -41,5 +42,5 @@ Then execute 'ruby ./output.rb' to replay the recorded session.
 
 Author
 ------
-Author of tt-record is Andreas Krennmair <ak@synflood.at>.
+Author of tt-record and tuitest is Andreas Krennmair <ak@synflood.at>.
 Author of this manpage is Michael Prokop <mika@grml.org>.
