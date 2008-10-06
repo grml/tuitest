@@ -25,6 +25,9 @@ build-stamp: configure-stamp
 	# Add here commands to compile the package.
 	$(MAKE)
 	$(MAKE) doc
+	# until supported by upstream :)
+	asciidoc -d manpage -b docbook tt-record.1.txt
+	xsltproc /usr/share/xml/docbook/stylesheet/nwalsh/manpages/docbook.xsl tt-record.1.xml
 
 	touch $@
 
@@ -34,6 +37,7 @@ clean:
 	rm -f build-stamp configure-stamp
 
 	# Add here commands to clean up after the build process.
+	# broken in release 0.1:
 	#$(MAKE) clean
 	rm -f *.o rote/*.o swig/Makefile swig/*.so swig/tuitest_wrap.c swig/tuitest_wrap.o tt-record
 
@@ -60,7 +64,7 @@ binary-arch: build install
 	dh_installchangelogs CHANGES
 	dh_installdocs
 	dh_installexamples
-	dh_installman
+	dh_installman tt-record.1
 	dh_link
 	dh_strip
 	dh_compress
