@@ -1,0 +1,17 @@
+Source: tuitest
+Section: utils
+Priority: extra
+Maintainer: Michael Prokop <mika@grml.org>
+Build-Depends: debhelper (>= 7), libncurses5-dev, ruby1.8-dev, swig
+Standards-Version: 3.8.0
+Homepage: http://synflood.at/programs.html
+XS-Vcs-git: git://git.grml.org/tuitest.git
+XS-Vcs-Browser: http://git.grml.org/?p=tuitest.git
+
+Package: tuitest
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: tool to create and run automated tests of text user interfaces
+ tuitest is meant as a complement to the widespread use of unit tests, and uses
+ concepts known from GUI testing tools with the difference that it applies
+ them specifically to text- and terminal-based user interfaces.
