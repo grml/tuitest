@@ -5,8 +5,8 @@ Maintainer: Michael Prokop <mika@grml.org>
 Build-Depends: debhelper (>= 5), libncurses5-dev, ruby1.8-dev, swig, rdoc, asciidoc
 Standards-Version: 3.8.0
 Homepage: http://synflood.at/programs.html
-XS-Vcs-git: git://git.grml.org/tuitest.git
-XS-Vcs-Browser: http://git.grml.org/?p=tuitest.git
+XS-Vcs-git: https://github.com/grml/tuitest.git
+XS-Vcs-Browser: https://github.com/grml/tuitest
 
 Package: tuitest
 Architecture: any
